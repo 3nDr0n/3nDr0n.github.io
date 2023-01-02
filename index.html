@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
         <title>Alexander Magyar</title>
-        <link rel="shortcut icon" type="img/jpg" href="images/coding_icon.png">
+        <link rel="shortcut icon" type="img/jpg" href="images/icon.png">
         <link rel="stylesheet" type="text/css" href="stylesheet/styling.css">
     </head>
 
@@ -19,7 +19,6 @@
             <a href="#Slideshow">Slideshow</a>
             <a href="#About">About Me</a>
             <a href="#GitHub">GitHub</a>
-            <a href="#Contact">Get in Touch</a>
             <!--onclick and ondblclick functions added-->
             <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
@@ -42,9 +41,14 @@
                     </q>
                     <br>-Andrew Hunt
                     <br>
-                    <br>Hi, my name is Alexander Magyar. Welcome to my portfolio website. On it, you can find all about my background and experience.
                     <br>
-                    <br>Thank you for stopping by!
+                    <br>
+                    <q>“Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning.”
+                    </q>
+                    <br>-Rick Cook
+                    <br>
+                    <br><p class="center" id="int">Hi, my name is Alexander Magyar. Welcome to my portfolio website. On it, you can find all about my background and experience.</p>
+                    <br><p class="center" id="int">Thank you for stopping by!</p>
                 </p>
             </strong>
         </div>
@@ -55,7 +59,7 @@
                 <div id="Slideshow_Container">
                     <!-- Slide 1 of 6 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/me.jpg" alt="Picture of yourself">
+                        <img class="Slideshow_Images" src="images/me.jpg" alt="myself">
                         <div class="text">I'm available to assist you on your project!</div>
                     </div>
                     <!-- Slide 2 of 6 -->
@@ -80,7 +84,7 @@
                     </div>
                     <!-- Slide 6 of 6 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/contact.jpg" alt="Replace with a picture of your choosing"> 
+                        <img class="Slideshow_Images" src="images/contact.jpg" alt="contact"> 
                         <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
                     </div>
                     <!-- Previous and next buttons -->
@@ -102,7 +106,7 @@
         </div>
 
 
-        <!--About section-->
+        <!--About-->
         <div class="Row" id="About">
             <!--Left Column-->
             <div class="Column_2">
@@ -114,8 +118,7 @@
                 <p>
                     I am a Web Developer/Software Developer who is just starting out in the field and is eager to learn. I have been very close to technology since early childhood so I would happily call this my passion.
                     <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>`s Software Developer Boot Camp, trained and experienced in the following web and programming languages: HTML, CSS, JavaScript.
-                    <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                    <a href="#Contact">Contact</a> me below!
                 </p>
             </div>
         </div>
@@ -141,7 +144,7 @@
         <div id="Contact">
             <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
             <div class="form-popup" id="myForm">
-                 <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                 <form action="https://formspree.io/f/xnqrnady" method="POST" class="form-container"> 
                      <h1>Contact</h1>
                      <label for="name"><b>Name</b></label>
                        <input type="text" placeholder="Type your name here" name="name" required>

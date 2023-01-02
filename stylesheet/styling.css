@@ -1,8 +1,8 @@
-/***** GENERAL STYLING *****/
+/*general style*/
 
-/*Affects entire document */
+/*affects entire document */
 html {
-    scroll-behavior: smooth; /*This ensures that the page scrolling is smooth when the buttons on the nav bar is clicked */
+    scroll-behavior: smooth; /*ensures smooth scrolling when the buttons on the nav bar are clicked */
 }
 
 /* Body */
@@ -31,6 +31,16 @@ h1 {
     color: #1a1a1a; 
 }
 
+video {  
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
 /* Heading 1 element hover effect */
 h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
@@ -40,9 +50,8 @@ h1:hover {
 
 /* Styling for Portfolio Title Text */
 .white-text {
-    color: rgb(188, 230, 196);/* This is used to change the color of the Portfolio Title text */
+    color: white;/* This is used to change the color of the Portfolio Title text */
     padding-top: 10vh; /* Adds padding (equal to 10% of the viewport height) to the top of the Portfolio Title text */
-    text-shadow: 3px 3px yellowgreen;
 }
 
 /* Paragraph elements */
@@ -54,6 +63,12 @@ p {
     padding-left: 1vw; /* Relative padding equal to 1% of the viewport width */
     padding-right: 1vw; /* Relative padding equal to 1% of the viewport width */
 }
+
+#int {
+    color: white;
+    font-size: 2.8vw;
+}
+
 
 /* Paragraph element hover effect */
 p:hover {
@@ -92,7 +107,7 @@ img {
     max-height: 100%; /* Ensures all images stay within the height of their container */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin: auto auto auto auto; /* This centers all images */
-    width: 50rem;
+    width: 40vw;
     height: auto;
     border-color: yellowgreen;
     border-width: 10px;
@@ -124,7 +139,7 @@ footer {
     width: 100%; /* This makes the navbar span the entire width of the page */
     z-index: 1; /* This ensures other elements don't display over the navbar */
     -webkit-animation: moveNav 5s; /* Safari 4.0 - 8.0 */
-    animation: moveNav 5s; /* This makes the moveNav animation last 5 seconds */
+    animation: moveNav 4s; /* This makes the moveNav animation last 4 seconds */
     border: white solid 2px;
 }
 
@@ -454,13 +469,13 @@ button:hover, .form-container .btn:hover {
 /*Media rules for paragraph font size for different screen sizes*/
 @media screen and (max-width: 527px) {
     p {
-        font-size: 3.75vw;
+        font-size: 3.5vw;
     }
 }
 
 @media screen and (min-width: 528px) and (max-width: 660px) {
     p {
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 }
 
